@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: springboot-api
+    env: java
+    plan: free
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/*.jar"
+    branch: main
+    repo: https://github.com/Seydina-Mouhamed-Fall/APIBLOG_DeployTEST
+    autoDeploy: true
